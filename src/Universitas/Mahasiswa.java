@@ -3,8 +3,6 @@ package Universitas;
 
 
 public class Mahasiswa {  
-package universitas;
-public class Mahasiswa {
     private String npm, nama, prodi;
     
     public Mahasiswa(String npm, String nama, String prodi){
@@ -12,15 +10,21 @@ public class Mahasiswa {
         this.nama = nama;
         this.prodi = prodi;
     }
-    public void setNPM(String npm) {
+    public void getNPM(String npm) {
         this.npm = npm;
     }
     
-    public void setNama(String nama) {
+    public void getNama(String nama) {
         this.nama = nama;
     }
     
-    public void setProdi(String prodi) {
+    public void getProdi(String prodi) {
         this.prodi = prodi;
+    }
+    
+    public void getDetail (){
+         System.out.println(" NPM :"+ npm);
+        System.out.println(" Nama :"+ nama);
+        System.out.println(" Prodi :"+ prodi);
     }
 }
